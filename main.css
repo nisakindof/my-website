@@ -1,0 +1,50 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #76cdc3;
+        color: rgb(45, 146, 92);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+h1 {
+    color: rgb(4, 80, 42);
+}
+
+/* Pros and Cons grid styles */
+.pros-cons-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.pros {
+    border-left: 6px solid #2d925c; /* green accent */
+}
+
+.cons {
+    border-left: 6px solid #b33a3a; /* red accent */
+}
+
+@media (min-width: 720px) {
+    .pros-cons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* small improvements for readability */
+main { padding: 1rem; }
+p, li { line-height: 1.5; color: #063a2a; }
